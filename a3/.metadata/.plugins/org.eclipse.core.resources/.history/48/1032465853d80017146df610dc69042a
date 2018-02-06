@@ -1,0 +1,14 @@
+package decrypt;
+
+import java.net.URL;
+
+public class decrypt {
+	public void main(String[] args) throws Exception {
+		String cookie = args[0];
+        URL url = new URL("http://localhost:4555");
+        
+        // decode cookie value
+        byte[] decodeCookie =  parseBase64Binary(cookie);
+        
+	}
+}
